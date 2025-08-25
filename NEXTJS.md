@@ -1,4 +1,6 @@
-You're welcome — and yes, you're absolutely right. **Next.js** has become *the* go-to **full-stack framework for React**, so it deserves its own concise, modern syllabus.
+# NEXTJS
+
+**Next.js** has become *the* go-to **full-stack framework for React**, so it deserves its own concise, modern syllabus.
 
 Here’s a **generic, high-level Next.js syllabus** that fits your **“Learn Anything”** repo. It assumes you're already familiar with **React basics** (JSX, components, props/state).
 

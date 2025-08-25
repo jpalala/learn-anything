@@ -110,4 +110,85 @@
 
 ---
 
-Would you like a checklist version of this or suggested projects to practice each step?
+Absolutely! Here’s a straightforward **practice project** focused on deploying a Dockerized web app using AWS services, which will help you apply many core DevOps and AWS concepts.
+
+---
+
+# Practice Project: Deploy a Dockerized Web Application on AWS ECS
+
+---
+
+### Project Overview
+
+You’ll containerize a simple web application (can be a Node.js, Python Flask, or PHP app), push the Docker image to AWS Elastic Container Registry (ECR), and deploy it using AWS Elastic Container Service (ECS) with Fargate (serverless containers). You’ll also set up a simple CI/CD pipeline using AWS CodePipeline to automate builds and deployments.
+
+---
+
+### What You Will Learn
+
+* Docker basics: creating Dockerfiles and building images
+* Using AWS ECR to store container images
+* Deploying containers with AWS ECS and Fargate
+* Setting up a basic CI/CD pipeline with AWS CodePipeline and CodeBuild
+* Managing infrastructure as code (optional: use AWS CloudFormation or Terraform)
+* Monitoring deployment status and logs via AWS CloudWatch
+
+---
+
+### Step-by-Step Project Outline
+
+1. **Create a simple web application**
+
+   * Choose your favorite language/framework (Node.js/Express, Python/Flask, etc.)
+   * Make sure it listens on a port and returns a basic response
+
+2. **Containerize your app with Docker**
+
+   * Write a Dockerfile for your app
+   * Build and test the Docker image locally
+
+3. **Push the Docker image to AWS ECR**
+
+   * Create an ECR repository
+   * Authenticate Docker with ECR
+   * Push your image to the repository
+
+4. **Create an ECS cluster and task definition**
+
+   * Use AWS Management Console or CLI to set up ECS Cluster
+   * Define your task with the ECR image and required CPU/memory
+
+5. **Deploy the container on ECS with Fargate**
+
+   * Create a Fargate service running your task
+   * Assign a public IP to access the app
+
+6. **(Optional) Set up AWS CodePipeline**
+
+   * Connect your source repo (e.g., GitHub)
+   * Configure CodeBuild to build the Docker image and push to ECR
+   * Automate deployment to ECS
+
+7. **Monitor and verify**
+
+   * Use AWS CloudWatch to check logs and monitor the service
+   * Access your running app via public URL
+
+---
+
+### Tips
+
+* Start simple: just get the app running on ECS before adding the pipeline.
+* Use AWS Free Tier resources to avoid costs.
+* Refer to AWS official tutorials for step-by-step guidance (linked below).
+
+---
+
+### Useful AWS Docs & Tutorials
+
+* [Deploy Docker containers on Amazon ECS using Fargate](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/getting-started-fargate.html)
+* [Push a Docker container image to Amazon ECR](https://docs.aws.amazon.com/AmazonECR/latest/userguide/docker-push-ecr-image.html)
+* [Create a pipeline with AWS CodePipeline](https://docs.aws.amazon.com/codepipeline/latest/userguide/getting-started-codepipeline.html)
+* [AWS CodeBuild Docker build example](https://docs.aws.amazon.com/codebuild/latest/userguide/sample-docker.html)
+
+---

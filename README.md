@@ -4,7 +4,7 @@ Syllabus Content for learning anything
 
 
 
-- [AGILE_and_SOFT_SKILLS](AGILE_and_SOFT_SKILLS.md
+- [AGILE_and_SOFT_SKILLS](AGILE_and_SOFT_SKILLS.md)
 - [JAVA](JAVA.md) 
 - [DEVOPS_w_AWS](DEVOPS_w_AWS.md)
 - [FRONTEND](FRONTEND.md)
